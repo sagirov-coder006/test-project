@@ -1,0 +1,35 @@
+{
+  "files": {
+    "main.css": "/test-project/static/css/main.c1b99f79.chunk.css",
+    "main.js": "/test-project/static/js/main.ef7ea463.chunk.js",
+    "main.js.map": "/test-project/static/js/main.ef7ea463.chunk.js.map",
+    "runtime-main.js": "/test-project/static/js/runtime-main.ea1fc2e1.js",
+    "runtime-main.js.map": "/test-project/static/js/runtime-main.ea1fc2e1.js.map",
+    "static/js/2.e35672b6.chunk.js": "/test-project/static/js/2.e35672b6.chunk.js",
+    "static/js/2.e35672b6.chunk.js.map": "/test-project/static/js/2.e35672b6.chunk.js.map",
+    "index.html": "/test-project/index.html",
+    "static/css/main.c1b99f79.chunk.css.map": "/test-project/static/css/main.c1b99f79.chunk.css.map",
+    "static/js/2.e35672b6.chunk.js.LICENSE.txt": "/test-project/static/js/2.e35672b6.chunk.js.LICENSE.txt",
+    "static/media/index.scss": "/test-project/static/media/RFDewi-Black.982a9b55.woff",
+    "static/media/about.14f081b9.jpg": "/test-project/static/media/about.14f081b9.jpg",
+    "static/media/certificate-1.73c9c828.jpg": "/test-project/static/media/certificate-1.73c9c828.jpg",
+    "static/media/certificate-2.bca5e01d.jpg": "/test-project/static/media/certificate-2.bca5e01d.jpg",
+    "static/media/house-1.f4a63a42.jpg": "/test-project/static/media/house-1.f4a63a42.jpg",
+    "static/media/house-2.99fc70cf.jpg": "/test-project/static/media/house-2.99fc70cf.jpg",
+    "static/media/project-1.d73f7f62.jpg": "/test-project/static/media/project-1.d73f7f62.jpg",
+    "static/media/project-2.86769e6f.jpg": "/test-project/static/media/project-2.86769e6f.jpg",
+    "static/media/service-1.9d6e5579.jpg": "/test-project/static/media/service-1.9d6e5579.jpg",
+    "static/media/service-2.d664a3a4.jpg": "/test-project/static/media/service-2.d664a3a4.jpg",
+    "static/media/service-3.2331ec75.jpg": "/test-project/static/media/service-3.2331ec75.jpg",
+    "static/media/service-4.6c0798cf.jpg": "/test-project/static/media/service-4.6c0798cf.jpg",
+    "static/media/service-5.a5a73c18.jpg": "/test-project/static/media/service-5.a5a73c18.jpg",
+    "static/media/service-6.12c82489.jpg": "/test-project/static/media/service-6.12c82489.jpg",
+    "static/media/service-7.376baac2.jpg": "/test-project/static/media/service-7.376baac2.jpg"
+  },
+  "entrypoints": [
+    "static/js/runtime-main.ea1fc2e1.js",
+    "static/js/2.e35672b6.chunk.js",
+    "static/css/main.c1b99f79.chunk.css",
+    "static/js/main.ef7ea463.chunk.js"
+  ]
+}
