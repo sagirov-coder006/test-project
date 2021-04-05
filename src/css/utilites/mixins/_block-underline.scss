@@ -1,0 +1,83 @@
+@mixin block-underline($left, $left-md, $left-xs) {
+  position: relative;
+  &:after {
+    content: '';
+    width: calc(100% - #{$left} * 2);
+    bottom: 0;
+    left: $left;
+    height: 1px;
+    background-color: $footer-contact-label;
+    position: absolute;
+    @include media-max(xl) {
+      left: $left-md;
+      width: calc(100% - #{$left-md} * 2);
+    }
+    @include media-max(md) {
+      left: $left-xs;
+      width: calc(100% - #{$left-xs} * 2);
+    }
+  }
+}
+
+@mixin block-underline-width-color($left, $left-md, $left-xs, $color) {
+  position: relative;
+  &:after {
+    content: '';
+    width: calc(100% - #{$left} * 2);
+    bottom: 0;
+    left: $left;
+    height: 1px;
+    background-color: $color;
+    position: absolute;
+    @include media-max(xl) {
+      left: $left-md;
+      width: calc(100% - #{$left-md} * 2);
+    }
+    @include media-max(md) {
+      left: $left-xs;
+      width: calc(100% - #{$left-xs} * 2);
+    }
+  }
+}
+
+@mixin block-upperline($left, $left-md, $left-xs) {
+  position: relative;
+  &:before {
+    content: '';
+    width: calc(100% - #{$left} * 2);
+    top: 0;
+    left: $left;
+    height: 1px;
+    background-color: $footer-contact-label;
+    position: absolute;
+    @include media-max(xl) {
+      left: $left-md;
+      width: calc(100% - #{$left-md} * 2);
+    }
+    @include media-max(md) {
+      left: $left-xs;
+      width: calc(100% - #{$left-xs} * 2);
+    }
+  }
+}
+
+@mixin block-upperline-width-color($left, $left-md, $left-xs, $color) {
+  position: relative;
+  &:before {
+    content: '';
+    width: calc(100% - #{$left} * 2);
+    top: 0;
+    left: $left;
+    height: 1px;
+    background-color: $color;
+    position: absolute;
+    @include media-max(xl) {
+      left: $left-md;
+      width: calc(100% - #{$left-md} * 2);
+    }
+    @include media-max(md) {
+      left: $left-xs;
+      width: calc(100% - #{$left-xs} * 2);
+    }
+  }
+}

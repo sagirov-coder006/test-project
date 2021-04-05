@@ -1,0 +1,55 @@
+$name-font-size: rem(29px);
+$name-font-size_max-md: rem(24px);
+
+$country-font-size: rem(16px);
+
+$name-block-margin-top: 8px;
+$name-block-margin-top_max-md: 11px;
+$name-block-margin-bottom: 48px;
+
+$certificat-custom-grid: 11;
+
+$logo-height: 53px;
+$logo-height-xs: 30px;
+
+@include get-grid($certificat-custom-grid, $column_margin-x/2, 'cert-xl');
+@include media-max(md) {
+  @include get-grid($column_count-x-_min_xs, $column_margin-x_min_xs/2, 'cert-xs');
+}
+
+.certificate{
+  &__name-block {
+    margin-top: $name-block-margin-top;
+    margin-bottom: $name-block-margin-bottom;
+    line-height: $line-height-sm;
+    @include flex-row;
+    @include media-max(md) {
+      margin-top: $name-block-margin-top_max-md;
+    }
+  }
+
+  &__name {
+    font-size: $name-font-size;
+    font-weight: $font-weight-medium;
+    @include media-max(md) {
+      font-size: $name-font-size_max-md;
+    }
+  }
+  &__country {
+    font-size: $country-font-size;
+  }
+  &__logo {
+    img {
+      height: $logo-height;
+      width: auto;
+      object-fit: contain;
+      @include media-max(md) {
+        height: $logo-height-xs;
+      }
+    }
+    @include media-max(xl){
+      @include flex-row;
+      justify-content: flex-end;
+    }
+  }
+}

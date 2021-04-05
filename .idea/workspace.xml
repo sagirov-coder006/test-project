@@ -1,0 +1,811 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<project version="4">
+  <component name="ChangeListManager">
+    <list default="true" id="3014d264-36a5-406c-989f-ed7dd4baa7b0" name="Default Changelist" comment="">
+      <change afterPath="$PROJECT_DIR$/.idea/watcherTasks.xml" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/app.js" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/components/layouts/footer/footer.js" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/components/layouts/footer/index.js" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/components/layouts/index.js" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/components/pages/about/about-list/about-list.js" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/components/pages/about/about-list/index.js" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/components/pages/about/about.js" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/components/pages/about/certificates/block/block.js" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/components/pages/about/certificates/block/index.js" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/components/pages/about/certificates/certificates.js" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/components/pages/about/certificates/index.js" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/components/pages/about/certificates/item/index.js" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/components/pages/about/certificates/item/item.js" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/components/pages/about/guarantee-block/guarantee.js" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/components/pages/about/guarantee-block/index.js" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/components/pages/about/index.js" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/components/pages/about/our-projects/index.js" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/components/pages/about/our-projects/our-projects.js" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/components/pages/about/our-projects/project-item/index.js" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/components/pages/about/our-projects/project-item/project-item.js" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/components/pages/about/our-projects/project-list/index.js" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/components/pages/about/our-projects/project-list/project-list.js" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/components/pages/about/services/index.js" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/components/pages/about/services/services-item/index.js" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/components/pages/about/services/services-item/services-item.js" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/components/pages/about/services/services-list/index.js" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/components/pages/about/services/services-list/services-list.js" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/components/pages/about/services/services.js" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/components/pages/confidential/confidential.js" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/components/pages/confidential/index.js" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/components/pages/index.js" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/css/base/_.scss" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/css/base/_general.scss" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/css/base/_reset.scss" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/css/base/_typography.scss" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/css/components/_.scss" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/css/components/_link-button.scss" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/css/components/_title.scss" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/css/index.scss" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/css/layout/_.scss" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/css/layout/_grid.scss" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/css/layout/footer/_.scss" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/css/layout/footer/_bottom-part.scss" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/css/layout/footer/_contacts.scss" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/css/layout/footer/_footer.scss" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/css/layout/footer/_socials.scss" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/css/layout/footer/_top-part.scss" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/css/layout/footer/_workin-hours.scss" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/css/layout/header/_.scss" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/css/layout/header/_contacts.scss" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/css/layout/header/_hamburger.scss" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/css/layout/header/_header.scss" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/css/layout/header/_logo.scss" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/css/layout/header/_nav.scss" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/css/pages/_.scss" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/css/pages/about-page/_.scss" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/css/pages/about-page/certificares-block/_.scss" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/css/pages/about-page/certificares-block/_certificat-info.scss" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/css/pages/about-page/certificares-block/_certificate.scss" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/css/pages/about-page/certificares-block/_item-name.scss" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/css/pages/about-page/guarantee/_.scss" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/css/pages/about-page/guarantee/_guarantee.scss" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/css/pages/about-page/main-lists-block/_.scss" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/css/pages/about-page/main-lists-block/_image-block.scss" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/css/pages/about-page/main-lists-block/_list-item.scss" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/css/pages/about-page/main-lists-block/_lists-title.scss" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/css/pages/about-page/main-lists-block/_main-list-block.scss" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/css/pages/about-page/our-projects/_.scss" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/css/pages/about-page/our-projects/_house.scss" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/css/pages/about-page/our-projects/_our-projects.scss" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/css/pages/about-page/our-projects/_project.scss" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/css/pages/about-page/services/_.scss" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/css/pages/about-page/services/_service.scss" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/css/pages/about-page/services/_services-item.scss" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/css/pages/about-page/services/_services-list.scss" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/css/pages/confidential-page/_.scss" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/css/pages/confidential-page/_confidential.scss" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/css/utilites/_.scss" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/css/utilites/functions/_.scss" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/css/utilites/functions/_rem.scss" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/css/utilites/mixins/_.scss" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/css/utilites/mixins/_block-underline.scss" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/css/utilites/mixins/_flex-properties.scss" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/css/utilites/mixins/_get-grid.scss" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/css/utilites/mixins/_get_title.scss" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/css/utilites/mixins/_grid.scss" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/css/utilites/mixins/_media.scss" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/css/utilites/mixins/_transitions.scss" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/css/utilites/mixins/_typography.scss" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/css/utilites/var/_.scss" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/css/utilites/var/_colors.scss" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/css/utilites/var/_grid.scss" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/css/utilites/var/_media_breakpoints.scss" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/css/utilites/var/_typography.scss" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/package.json" beforeDir="false" afterPath="$PROJECT_DIR$/package.json" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/public/index.html" beforeDir="false" afterPath="$PROJECT_DIR$/public/index.html" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/public/logo192.png" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/public/logo512.png" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/App.css" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/App.js" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/App.test.js" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/index.css" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/index.js" beforeDir="false" afterPath="$PROJECT_DIR$/src/index.js" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/logo.svg" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/reportWebVitals.js" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/setupTests.js" beforeDir="false" />
+    </list>
+    <option name="EXCLUDED_CONVERTED_TO_IGNORED" value="true" />
+    <option name="SHOW_DIALOG" value="false" />
+    <option name="HIGHLIGHT_CONFLICTS" value="true" />
+    <option name="HIGHLIGHT_NON_ACTIVE_CHANGELIST" value="false" />
+    <option name="LAST_RESOLUTION" value="IGNORE" />
+  </component>
+  <component name="FileEditorManager">
+    <leaf SIDE_TABS_SIZE_LIMIT_KEY="300">
+      <file pinned="false" current-in-tab="false">
+        <entry file="file://$PROJECT_DIR$/src/css/pages/confidential-page/_confidential.scss">
+          <provider selected="true" editor-type-id="text-editor">
+            <state relative-caret-position="85">
+              <caret line="5" column="20" selection-start-line="5" selection-start-column="20" selection-end-line="5" selection-end-column="20" />
+            </state>
+          </provider>
+        </entry>
+      </file>
+      <file pinned="false" current-in-tab="false">
+        <entry file="file://$PROJECT_DIR$/src/components/pages/about/services/services.js">
+          <provider selected="true" editor-type-id="text-editor">
+            <state relative-caret-position="1615">
+              <caret line="103" column="41" selection-start-line="103" selection-start-column="41" selection-end-line="103" selection-end-column="41" />
+              <folding>
+                <element signature="e#0#39#0" expanded="true" />
+              </folding>
+            </state>
+          </provider>
+        </entry>
+      </file>
+      <file pinned="false" current-in-tab="false">
+        <entry file="file://$PROJECT_DIR$/src/components/pages/about/services/services-item/services-item.js">
+          <provider selected="true" editor-type-id="text-editor">
+            <state relative-caret-position="170">
+              <caret line="11" column="29" selection-start-line="11" selection-start-column="29" selection-end-line="11" selection-end-column="29" />
+            </state>
+          </provider>
+        </entry>
+      </file>
+      <file pinned="false" current-in-tab="false">
+        <entry file="file://$PROJECT_DIR$/src/css/pages/about-page/services/_services-item.scss">
+          <provider selected="true" editor-type-id="text-editor">
+            <state relative-caret-position="782">
+              <caret line="46" column="36" selection-start-line="46" selection-start-column="36" selection-end-line="46" selection-end-column="36" />
+            </state>
+          </provider>
+        </entry>
+      </file>
+      <file pinned="false" current-in-tab="false">
+        <entry file="file://$PROJECT_DIR$/src/css/pages/about-page/services/_services-list.scss">
+          <provider selected="true" editor-type-id="text-editor">
+            <state relative-caret-position="209">
+              <caret line="26" column="15" selection-start-line="26" selection-start-column="15" selection-end-line="26" selection-end-column="15" />
+            </state>
+          </provider>
+        </entry>
+      </file>
+      <file pinned="false" current-in-tab="false">
+        <entry file="file://$PROJECT_DIR$/yarn.lock">
+          <provider selected="true" editor-type-id="text-editor">
+            <state relative-caret-position="-969" />
+          </provider>
+        </entry>
+      </file>
+      <file pinned="false" current-in-tab="true">
+        <entry file="file://$PROJECT_DIR$/package.json">
+          <provider selected="true" editor-type-id="text-editor">
+            <state relative-caret-position="102">
+              <caret line="6" column="40" lean-forward="true" selection-start-line="6" selection-start-column="40" selection-end-line="6" selection-end-column="40" />
+            </state>
+          </provider>
+        </entry>
+      </file>
+      <file pinned="false" current-in-tab="false">
+        <entry file="file://$PROJECT_DIR$/src/components/pages/about/services/services-list/services-list.js">
+          <provider selected="true" editor-type-id="text-editor">
+            <state relative-caret-position="204">
+              <caret line="13" column="85" selection-start-line="13" selection-start-column="85" selection-end-line="13" selection-end-column="85" />
+              <folding>
+                <element signature="e#0#26#0" expanded="true" />
+              </folding>
+            </state>
+          </provider>
+        </entry>
+      </file>
+    </leaf>
+  </component>
+  <component name="FileTemplateManagerImpl">
+    <option name="RECENT_TEMPLATES">
+      <list>
+        <option value="JavaScript File" />
+        <option value="SCSS File" />
+      </list>
+    </option>
+  </component>
+  <component name="FindInProjectRecents">
+    <findStrings>
+      <find>500</find>
+      <find>col-base</find>
+      <find>.footer__value</find>
+      <find>$count-xl</find>
+      <find>$line-height-xs</find>
+      <find>createTodoItem</find>
+      <find>$project-name-margin-top_max-md</find>
+      <find>go-to-houses</find>
+      <find>service-list__items</find>
+    </findStrings>
+    <replaceStrings>
+      <replace>createListItem</replace>
+      <replace>$count</replace>
+    </replaceStrings>
+  </component>
+  <component name="Git.Settings">
+    <option name="RECENT_GIT_ROOT_PATH" value="$PROJECT_DIR$" />
+  </component>
+  <component name="IdeDocumentHistory">
+    <option name="CHANGED_PATHS">
+      <list>
+        <option value="$PROJECT_DIR$/src/css/pages/about-page/guarantee/_guarantee.scss" />
+        <option value="$PROJECT_DIR$/src/components/pages/about/certificates/index.js" />
+        <option value="$PROJECT_DIR$/src/components/pages/about/certificates/item/index.js" />
+        <option value="$PROJECT_DIR$/src/components/pages/about/certificates/block/index.js" />
+        <option value="$PROJECT_DIR$/src/components/pages/about/certificates/certificates.js" />
+        <option value="$PROJECT_DIR$/src/css/pages/about-page/certificares-block/_.scss" />
+        <option value="$PROJECT_DIR$/src/components/pages/about/certificates/block/block.js" />
+        <option value="$PROJECT_DIR$/src/css/pages/about-page/certificares-block/_item-name.scss" />
+        <option value="$PROJECT_DIR$/src/components/pages/about/certificates/item/item.js" />
+        <option value="$PROJECT_DIR$/src/css/pages/about-page/certificares-block/_certificat-info.scss" />
+        <option value="$PROJECT_DIR$/src/css/pages/about-page/certificares-block/_certificate.scss" />
+        <option value="$PROJECT_DIR$/src/components/pages/about/our-projects/project-item/index.js" />
+        <option value="$PROJECT_DIR$/src/components/pages/about/our-projects/project-list/index.js" />
+        <option value="$PROJECT_DIR$/src/components/pages/about/our-projects/index.js" />
+        <option value="$PROJECT_DIR$/src/components/layouts/footer/footer.js" />
+        <option value="$PROJECT_DIR$/src/components/pages/about/our-projects/project-list/project-list.js" />
+        <option value="$PROJECT_DIR$/src/css/pages/about-page/our-projects/_house.scss" />
+        <option value="$PROJECT_DIR$/src/css/pages/about-page/our-projects/_ouu-projects.scss" />
+        <option value="$PROJECT_DIR$/src/css/pages/about-page/our-projects/_.scss" />
+        <option value="$PROJECT_DIR$/src/components/pages/about/our-projects/our-projects.js" />
+        <option value="$PROJECT_DIR$/src/css/utilites/mixins/_block-underline.scss" />
+        <option value="$PROJECT_DIR$/src/components/pages/about/our-projects/project-item/project-item.js" />
+        <option value="$PROJECT_DIR$/src/css/pages/about-page/our-projects/_project.scss" />
+        <option value="$PROJECT_DIR$/src/css/pages/about-page/our-projects/_our-projects.scss" />
+        <option value="$PROJECT_DIR$/src/css/components/_link-button.scss" />
+        <option value="$PROJECT_DIR$/src/components/pages/confidential/index.js" />
+        <option value="$PROJECT_DIR$/src/components/pages/index.js" />
+        <option value="$PROJECT_DIR$/src/components/pages/confidential/confidential.js" />
+        <option value="$PROJECT_DIR$/src/components/layouts/header/header.js" />
+        <option value="$PROJECT_DIR$/src/components/layouts/header/list/list.js" />
+        <option value="$PROJECT_DIR$/src/components/layouts/header/list-item/list-item.js" />
+        <option value="$PROJECT_DIR$/src/app.js" />
+        <option value="$PROJECT_DIR$/src/css/pages/_.scss" />
+        <option value="$PROJECT_DIR$/src/css/pages/confidential-page/_.scss" />
+        <option value="$PROJECT_DIR$/src/css/pages/confidential-page/_confidential.scss" />
+        <option value="$PROJECT_DIR$/src/components/pages/about/services/services-item/index.js" />
+        <option value="$PROJECT_DIR$/src/components/pages/about/services/services-list/index.js" />
+        <option value="$PROJECT_DIR$/src/components/pages/about/services/index.js" />
+        <option value="$PROJECT_DIR$/src/components/pages/about/about.js" />
+        <option value="$PROJECT_DIR$/src/components/pages/about/our-projects/service-item-list/index.js" />
+        <option value="$PROJECT_DIR$/src/css/pages/about-page/services/_.js" />
+        <option value="$PROJECT_DIR$/src/css/pages/about-page/_.scss" />
+        <option value="$PROJECT_DIR$/src/css/pages/about-page/services/services-list.scss" />
+        <option value="$PROJECT_DIR$/src/css/pages/about-page/services/_.scss" />
+        <option value="$PROJECT_DIR$/src/css/pages/about-page/services/_service.scss" />
+        <option value="$PROJECT_DIR$/src/components/pages/about/services/services.js" />
+        <option value="$PROJECT_DIR$/src/components/pages/about/services/services-item/services-item.js" />
+        <option value="$PROJECT_DIR$/src/css/pages/about-page/services/_services-item.scss" />
+        <option value="$PROJECT_DIR$/src/components/pages/about/our-projects/service-item-list/services-item-list.js" />
+        <option value="$PROJECT_DIR$/src/components/pages/about/services/services-list/services-list.js" />
+        <option value="$PROJECT_DIR$/src/css/pages/about-page/services/_services-list.scss" />
+      </list>
+    </option>
+  </component>
+  <component name="ProjectFrameBounds" extendedState="6">
+    <option name="x" value="-8" />
+    <option name="y" value="-8" />
+    <option name="width" value="1382" />
+    <option name="height" value="744" />
+  </component>
+  <component name="ProjectLevelVcsManager">
+    <ConfirmationsSetting value="2" id="Add" />
+  </component>
+  <component name="ProjectView">
+    <navigator proportions="" version="1">
+      <foldersAlwaysOnTop value="true" />
+    </navigator>
+    <panes>
+      <pane id="Scope" />
+      <pane id="ProjectPane">
+        <subPane>
+          <expand>
+            <path>
+              <item name="test-project" type="b2602c69:ProjectViewProjectNode" />
+              <item name="test-project" type="462c0819:PsiDirectoryNode" />
+            </path>
+          </expand>
+          <select />
+        </subPane>
+      </pane>
+    </panes>
+  </component>
+  <component name="PropertiesComponent">
+    <property name="WebServerToolWindowFactoryState" value="false" />
+    <property name="list.type.of.created.stylesheet" value="SCSS" />
+    <property name="node.js.detected.package.eslint" value="true" />
+    <property name="node.js.path.for.package.eslint" value="project" />
+    <property name="node.js.selected.package.eslint" value="C:\Users\coder012\Documents\Уроки\Петриченко\test-project\node_modules\eslint" />
+    <property name="nodejs_interpreter_path.stuck_in_default_project" value="undefined stuck path" />
+    <property name="nodejs_npm_path_reset_for_default_project" value="true" />
+    <property name="nodejs_package_manager_path" value="yarn" />
+    <property name="settings.editor.selected.configurable" value="settings.github" />
+  </component>
+  <component name="RecentsManager">
+    <key name="MoveFile.RECENT_KEYS">
+      <recent name="C:\Users\coder012\Documents\Уроки\Петриченко\test-project\src\components\pages" />
+      <recent name="C:\Users\coder012\Documents\Уроки\Петриченко\test-project\src\css\pages\about-page\main-lists-block" />
+      <recent name="C:\Users\coder012\Documents\Уроки\Петриченко\test-project\src\assets\images" />
+      <recent name="C:\Users\coder012\Documents\Уроки\Петриченко\test-project\src" />
+      <recent name="C:\Users\coder012\Documents\Уроки\Петриченко\test-project\src\components\layouts" />
+    </key>
+  </component>
+  <component name="RunDashboard">
+    <option name="ruleStates">
+      <list>
+        <RuleState>
+          <option name="name" value="ConfigurationTypeDashboardGroupingRule" />
+        </RuleState>
+        <RuleState>
+          <option name="name" value="StatusDashboardGroupingRule" />
+        </RuleState>
+      </list>
+    </option>
+  </component>
+  <component name="RunManager" selected="npm.start">
+    <configuration name="build" type="js.build_tools.npm" temporary="true" nameIsGenerated="true">
+      <package-json value="$PROJECT_DIR$/package.json" />
+      <command value="run" />
+      <scripts>
+        <script value="build" />
+      </scripts>
+      <node-interpreter value="project" />
+      <envs />
+      <method v="2" />
+    </configuration>
+    <configuration name="start" type="js.build_tools.npm" temporary="true" nameIsGenerated="true">
+      <package-json value="$PROJECT_DIR$/package.json" />
+      <command value="run" />
+      <scripts>
+        <script value="start" />
+      </scripts>
+      <node-interpreter value="project" />
+      <envs />
+      <method v="2" />
+    </configuration>
+    <recent_temporary>
+      <list>
+        <item itemvalue="npm.build" />
+        <item itemvalue="npm.start" />
+      </list>
+    </recent_temporary>
+  </component>
+  <component name="SvnConfiguration">
+    <configuration>C:\Users\coder012\AppData\Roaming\Subversion</configuration>
+  </component>
+  <component name="TaskManager">
+    <task active="true" id="Default" summary="Default task">
+      <changelist id="3014d264-36a5-406c-989f-ed7dd4baa7b0" name="Default Changelist" comment="" />
+      <created>1616705197423</created>
+      <option name="number" value="Default" />
+      <option name="presentableId" value="Default" />
+      <updated>1616705197423</updated>
+      <workItem from="1616705198953" duration="112243000" />
+      <workItem from="1617647449992" duration="2143000" />
+    </task>
+    <servers />
+  </component>
+  <component name="TimeTrackingManager">
+    <option name="totallyTimeSpent" value="114386000" />
+  </component>
+  <component name="TodoView">
+    <todo-panel id="selected-file">
+      <is-autoscroll-to-source value="true" />
+    </todo-panel>
+    <todo-panel id="all">
+      <are-packages-shown value="true" />
+      <is-autoscroll-to-source value="true" />
+    </todo-panel>
+  </component>
+  <component name="ToolWindowManager">
+    <frame x="-8" y="-8" width="1382" height="744" extended-state="6" />
+    <editor active="true" />
+    <layout>
+      <window_info id="Favorites" order="0" side_tool="true" />
+      <window_info id="npm" order="1" sideWeight="0.2902439" side_tool="true" visible="true" weight="0.25340393" />
+      <window_info active="true" content_ui="combo" id="Project" order="2" sideWeight="0.7097561" visible="true" weight="0.25340393" />
+      <window_info id="Structure" order="3" side_tool="true" weight="0.25" />
+      <window_info anchor="bottom" id="Terminal" order="0" visible="true" weight="0.3289689" />
+      <window_info anchor="bottom" id="Database Changes" order="1" />
+      <window_info anchor="bottom" id="Event Log" order="2" side_tool="true" />
+      <window_info anchor="bottom" id="Version Control" order="3" weight="0.3289689" />
+      <window_info anchor="bottom" id="Docker" order="4" show_stripe_button="false" />
+      <window_info anchor="bottom" id="Message" order="5" />
+      <window_info anchor="bottom" id="Find" order="6" weight="0.3289689" />
+      <window_info anchor="bottom" id="Run" order="7" weight="0.2667758" />
+      <window_info anchor="bottom" id="Debug" order="8" weight="0.4" />
+      <window_info anchor="bottom" id="Cvs" order="9" weight="0.25" />
+      <window_info anchor="bottom" id="Inspection" order="10" weight="0.4" />
+      <window_info anchor="bottom" id="TODO" order="11" weight="0.3289689" />
+      <window_info anchor="right" id="Database" order="0" />
+      <window_info anchor="right" id="Commander" internal_type="SLIDING" order="1" type="SLIDING" weight="0.4" />
+      <window_info anchor="right" id="Ant Build" order="2" weight="0.25" />
+      <window_info anchor="right" content_ui="combo" id="Hierarchy" order="3" weight="0.25" />
+    </layout>
+    <layout-to-restore>
+      <window_info id="Favorites" order="0" side_tool="true" />
+      <window_info id="npm" order="1" sideWeight="0.502439" side_tool="true" weight="0.24962178" />
+      <window_info content_ui="combo" id="Project" order="2" sideWeight="0.49756098" visible="true" weight="0.24962178" />
+      <window_info id="Structure" order="3" side_tool="true" weight="0.25" />
+      <window_info anchor="bottom" id="Terminal" order="0" weight="0.3289689" />
+      <window_info anchor="bottom" id="Database Changes" order="1" />
+      <window_info anchor="bottom" id="Event Log" order="2" side_tool="true" />
+      <window_info anchor="bottom" id="Version Control" order="3" weight="0.3289689" />
+      <window_info anchor="bottom" id="Docker" order="4" show_stripe_button="false" />
+      <window_info anchor="bottom" id="Message" order="5" />
+      <window_info anchor="bottom" id="Find" order="6" weight="0.3289689" />
+      <window_info active="true" anchor="bottom" id="Run" order="7" visible="true" weight="0.2667758" />
+      <window_info anchor="bottom" id="Debug" order="8" weight="0.4" />
+      <window_info anchor="bottom" id="Cvs" order="9" weight="0.25" />
+      <window_info anchor="bottom" id="Inspection" order="10" weight="0.4" />
+      <window_info anchor="bottom" id="TODO" order="11" />
+      <window_info anchor="right" id="Database" order="0" />
+      <window_info anchor="right" id="Commander" internal_type="SLIDING" order="1" type="SLIDING" weight="0.4" />
+      <window_info anchor="right" id="Ant Build" order="2" weight="0.25" />
+      <window_info anchor="right" content_ui="combo" id="Hierarchy" order="3" weight="0.25" />
+    </layout-to-restore>
+  </component>
+  <component name="TypeScriptGeneratedFilesManager">
+    <option name="version" value="1" />
+  </component>
+  <component name="editorHistoryManager">
+    <entry file="file://$PROJECT_DIR$/src/css/layout/_grid.scss">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="136">
+          <caret line="46" selection-start-line="46" selection-end-line="49" selection-end-column="1" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/components/pages/about/certificates/item/index.js">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="34">
+          <caret line="2" column="31" selection-start-line="2" selection-start-column="31" selection-end-line="2" selection-end-column="31" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/components/pages/about/certificates/index.js">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="34">
+          <caret line="2" column="28" selection-start-line="2" selection-start-column="28" selection-end-line="2" selection-end-column="28" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/components/pages/about/our-projects/project-list/index.js">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="34">
+          <caret line="2" column="27" selection-start-line="2" selection-start-column="27" selection-end-line="2" selection-end-column="27" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/components/pages/about/certificates/block/block.js">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="68">
+          <caret line="7" column="28" lean-forward="true" selection-start-line="7" selection-start-column="28" selection-end-line="7" selection-end-column="28" />
+          <folding>
+            <element signature="e#0#26#0" expanded="true" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/components/pages/about/certificates/certificates.js">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="390">
+          <caret line="52" column="39" selection-end-line="59" />
+          <folding>
+            <element signature="e#0#39#0" expanded="true" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/components/pages/about/our-projects/index.js">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="34">
+          <caret line="2" column="27" selection-start-line="2" selection-start-column="27" selection-end-line="2" selection-end-column="27" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/components/pages/about/our-projects/project-item/index.js">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="34">
+          <caret line="2" column="27" selection-start-line="2" selection-start-column="27" selection-end-line="2" selection-end-column="27" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/components/pages/about/certificates/item/item.js">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="153">
+          <caret line="9" column="16" selection-start-line="8" selection-start-column="12" selection-end-line="9" selection-end-column="16" />
+          <folding>
+            <element signature="e#0#39#0" expanded="true" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/components/layouts/header/list/index.js">
+      <provider selected="true" editor-type-id="text-editor" />
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/components/layouts/footer/footer.js">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="357">
+          <caret line="116" column="22" lean-forward="true" selection-start-line="116" selection-start-column="22" selection-end-line="116" selection-end-column="22" />
+          <folding>
+            <element signature="e#0#26#0" expanded="true" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/css/pages/about-page/our-projects/_.scss">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="34">
+          <caret line="2" column="23" selection-start-line="2" selection-start-column="23" selection-end-line="2" selection-end-column="23" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/css/utilites/mixins/_typography.scss">
+      <provider selected="true" editor-type-id="text-editor">
+        <state>
+          <caret column="7" selection-start-column="7" selection-end-column="7" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/css/pages/about-page/our-projects/_house.scss">
+      <provider selected="true" editor-type-id="text-editor" />
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/css/utilites/mixins/_block-underline.scss">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="51">
+          <caret line="21" column="34" selection-start-line="21" selection-start-column="7" selection-end-line="21" selection-end-column="34" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/css/pages/about-page/our-projects/_project.scss">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="221">
+          <caret line="124" column="7" selection-start-line="124" selection-start-column="7" selection-end-line="124" selection-end-column="7" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/css/pages/about-page/our-projects/_our-projects.scss">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="233">
+          <caret line="64" column="17" selection-start-line="64" selection-start-column="17" selection-end-line="64" selection-end-column="17" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/components/pages/confidential/index.js">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="34">
+          <caret line="2" column="32" selection-start-line="2" selection-start-column="32" selection-end-line="2" selection-end-column="32" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/components/pages/confidential/confidential.js">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="-51">
+          <caret line="16" column="284" selection-start-line="16" selection-start-column="284" selection-end-line="16" selection-end-column="284" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/components/layouts/header/list/list.js">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="153">
+          <caret line="9" column="15" selection-start-line="9" selection-start-column="13" selection-end-line="9" selection-end-column="15" />
+          <folding>
+            <element signature="e#0#26#0" expanded="true" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/components/layouts/header/list-item/list-item.js">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="17">
+          <caret line="1" column="38" selection-start-line="1" selection-start-column="38" selection-end-line="1" selection-end-column="38" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/components/layouts/header/header.js">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="17">
+          <caret line="1" selection-start-line="1" selection-end-line="1" selection-end-column="38" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/css/components/_link-button.scss">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="26">
+          <caret line="13" column="22" selection-start-line="13" selection-start-column="22" selection-end-line="13" selection-end-column="22" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/index.js">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="34">
+          <caret line="2" column="19" selection-start-line="2" selection-start-column="19" selection-end-line="2" selection-end-column="19" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/components/pages/index.js">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="17">
+          <caret line="1" column="35" selection-start-line="1" selection-start-column="19" selection-end-line="1" selection-end-column="35" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/css/pages/_.scss">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="17">
+          <caret line="1" column="28" selection-start-line="1" selection-start-column="28" selection-end-line="1" selection-end-column="28" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/css/pages/confidential-page/_.scss">
+      <provider selected="true" editor-type-id="text-editor">
+        <state>
+          <caret column="23" selection-start-column="23" selection-end-column="23" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/app.js">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="238">
+          <caret line="14" column="41" selection-start-line="14" selection-start-column="41" selection-end-line="14" selection-end-column="41" />
+          <folding>
+            <element signature="e#0#39#0" expanded="true" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/components/pages/about/our-projects/project-item/project-item.js">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="216">
+          <caret line="87" column="1" lean-forward="true" selection-start-line="3" selection-end-line="87" selection-end-column="1" />
+          <folding>
+            <element signature="e#0#39#0" expanded="true" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/components/pages/about/our-projects/project-list/project-list.js">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="51">
+          <caret line="3" selection-end-line="26" selection-end-column="27" />
+          <folding>
+            <element signature="e#0#26#0" expanded="true" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/components/pages/about/services/index.js">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="34">
+          <caret line="2" column="28" selection-start-line="2" selection-start-column="28" selection-end-line="2" selection-end-column="28" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/components/pages/about/our-projects/our-projects.js">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="170">
+          <caret line="28" column="32" lean-forward="true" selection-start-line="28" selection-start-column="32" selection-end-line="28" selection-end-column="32" />
+          <folding>
+            <element signature="e#0#39#0" expanded="true" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/components/pages/about/about.js">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="253">
+          <caret line="18" column="27" selection-start-line="18" selection-start-column="27" selection-end-line="18" selection-end-column="27" />
+          <folding>
+            <element signature="e#0#26#0" expanded="true" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/components/pages/about/our-projects/service-item-list/index.js" />
+    <entry file="file://$PROJECT_DIR$/src/css/pages/about-page/services/_.js" />
+    <entry file="file://$PROJECT_DIR$/src/css/pages/about-page/services/services-list.scss" />
+    <entry file="file://$PROJECT_DIR$/src/css/pages/about-page/_.scss">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="68">
+          <caret line="4" column="19" selection-start-line="4" selection-start-column="19" selection-end-line="4" selection-end-column="19" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/css/pages/about-page/services/_.scss">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="34">
+          <caret line="2" column="24" selection-start-line="2" selection-start-column="24" selection-end-line="2" selection-end-column="24" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/css/utilites/var/_colors.scss">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="17">
+          <caret line="1" column="21" selection-start-line="1" selection-end-line="1" selection-end-column="21" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/css/pages/about-page/services/_service.scss">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="340">
+          <caret line="23" column="43" selection-start-line="23" selection-start-column="43" selection-end-line="23" selection-end-column="43" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/components/pages/about/our-projects/service-item-list/services-item-list.js" />
+    <entry file="file://$PROJECT_DIR$/src/components/pages/about/services/services-list/index.js">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="34">
+          <caret line="2" column="28" lean-forward="true" selection-start-line="2" selection-start-column="28" selection-end-line="2" selection-end-column="28" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/components/pages/about/services/services-item/index.js">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="34">
+          <caret line="2" column="27" selection-start-line="2" selection-start-column="27" selection-end-line="2" selection-end-column="27" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/css/pages/confidential-page/_confidential.scss">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="85">
+          <caret line="5" column="20" selection-start-line="5" selection-start-column="20" selection-end-line="5" selection-end-column="20" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/components/pages/about/services/services.js">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="1615">
+          <caret line="103" column="41" selection-start-line="103" selection-start-column="41" selection-end-line="103" selection-end-column="41" />
+          <folding>
+            <element signature="e#0#39#0" expanded="true" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/components/pages/about/services/services-item/services-item.js">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="170">
+          <caret line="11" column="29" selection-start-line="11" selection-start-column="29" selection-end-line="11" selection-end-column="29" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/css/pages/about-page/services/_services-item.scss">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="782">
+          <caret line="46" column="36" selection-start-line="46" selection-start-column="36" selection-end-line="46" selection-end-column="36" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/components/pages/about/services/services-list/services-list.js">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="204">
+          <caret line="13" column="85" selection-start-line="13" selection-start-column="85" selection-end-line="13" selection-end-column="85" />
+          <folding>
+            <element signature="e#0#26#0" expanded="true" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/css/pages/about-page/services/_services-list.scss">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="209">
+          <caret line="26" column="15" selection-start-line="26" selection-start-column="15" selection-end-line="26" selection-end-column="15" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/yarn.lock">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="-969" />
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/package.json">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="102">
+          <caret line="6" column="40" lean-forward="true" selection-start-line="6" selection-start-column="40" selection-end-line="6" selection-end-column="40" />
+        </state>
+      </provider>
+    </entry>
+  </component>
+</project>

@@ -1,0 +1,11 @@
+/// Убирает единицы измерения у числа
+///
+/// @param {Number} $number - Число у которого надо убрать единицы измерения
+/// @return {Number} - Число без единиц измерения
+@function strip-unit($number) {
+  @if (type-of($number) == "number" and not unitless($number)) {
+    @return $number / ($number * 0 + 1);
+  }
+
+  @return $number;
+}

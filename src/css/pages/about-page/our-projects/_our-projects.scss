@@ -1,0 +1,101 @@
+$our-peoject-padding-top: 26px;
+$our-peoject-padding-top_max-xl: 25px;
+$our-peoject-padding-top_max-md: 15px;
+
+$go-to-houses-link-margin-left: 10px;
+
+$title-line-margin-bottom: 250px;
+$title-line-margin-bottom_max-xl: 194px;
+$title-line-margin-bottom_max-md: 59px;
+
+$project-name-margin-top: 150px;
+$project-name-margin-top_max-md: 65px;
+
+$our-project-h2-margin-bottom_max-md: 15px;
+$our-project-h2-margin-bottom_max-xl: 20px;
+
+$our-project-subtitle-margin-bottom_max-xl: 53px;
+$our-project-subtitle-margin-bottom_max-md: 69px;
+
+.our-projects {
+  $this: &;
+  @include block-upperline($container_padding-x, $container_padding-x_max-xl, $container_padding-x_max-md);
+  padding-top: $our-peoject-padding-top;
+
+  h2 {
+    @include media-max(xl){
+      margin-bottom: $our-project-h2-margin-bottom_max-xl;
+    }
+    @include media-max(md){
+      margin-bottom: $our-project-h2-margin-bottom_max-md;
+    }
+  }
+
+  &__item {
+    @include block-underline-width-color($container_padding-x/2, $container_padding-x_max-xl/2, $container_padding-x_max-md/2, $footer-contact-label);
+    @include media-max(md) {
+      &:after {
+        display: none;
+      }
+    }
+  }
+
+  &__content {
+    &>.container:not(:first-child){
+      .project__name {
+        margin-top: $project-name-margin-top;
+        @include media-max(md) {
+          margin-top: $project-name-margin-top_max-md;
+        }
+      }
+    }
+  }
+
+  &__buttons {
+    @include flex-row;
+    .go-to-houses {
+      margin-right: $go-to-houses-link-margin-left;
+      @include media-max(md){
+        margin-bottom: $go-to-houses-link-margin-left;
+      }
+    }
+    @include media-max(xl){
+      flex-wrap: wrap;
+      justify-content: flex-start;
+      align-items: flex-start;
+      a {
+        width: auto;
+      }
+    }
+    @include media-max(md){
+
+    }
+  }
+
+  &__title-line {
+    margin-bottom: $title-line-margin-bottom;
+    @include media-max(xl) {
+      margin-bottom: $title-line-margin-bottom_max-xl;
+    }
+    @include media-max(md) {
+      margin-bottom: $title-line-margin-bottom_max-md;
+    }
+  }
+
+  &__subtitle {
+    line-height: $line-height-sm;
+    @include media-max(xl){
+      margin-bottom: $our-project-subtitle-margin-bottom_max-xl;
+    }
+    @include media-max(md){
+      margin-bottom: $our-project-subtitle-margin-bottom_max-md;
+    }
+  }
+
+  @include media-max(xl) {
+    padding-top: $our-peoject-padding-top_max-xl;
+  }
+  @include media-max(md) {
+    padding-top: $our-peoject-padding-top_max-md;
+  }
+}

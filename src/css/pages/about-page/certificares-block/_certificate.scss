@@ -1,0 +1,12 @@
+$certificate-margin-bottom: 120px;
+$certificate-margin-bottom_max-md: 150px;
+
+.certificate {
+  &__item {
+    @include block-upperline($container_padding-x/2, $container_padding-x_max-xl/2, $container_padding-x_max-md/2);
+    margin-bottom: $certificate-margin-bottom;
+    @include media-max(md){
+      margin-bottom:$certificate-margin-bottom_max-md;
+    }
+  }
+}

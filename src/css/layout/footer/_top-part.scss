@@ -1,0 +1,61 @@
+$block-label-font-size: rem(16px);
+$block-label-font-size-md: rem(18px);
+$block-label-font-size-xs: rem(16px);
+
+$block-value-font-size: rem(20px);
+$block-value-font-size-xl: rem(17px);
+
+$block-label-margin-right: rem(25px);
+$block-label-margin-right-md: 0;
+
+$block-label-margin-bottom: 12px;
+
+$footer-top-part-padding-bottom: 6px;
+
+$block-underline-left: $container_padding-x/2;
+$block-underline-left-md: $container_padding-x-max-xl/2;
+$block-underline-left-xs: $container_padding-x-max-md/2;
+
+.footer__top-part {
+  padding-bottom: $footer-top-part-padding-bottom;
+  &>div {
+    @include flex-vertical-bottom;
+    @include media-max(xl){
+      align-items: flex-start;
+      flex-direction: column;
+      width: 100%;
+    }
+  }
+  @include block-underline($block-underline-left, $block-underline-left-md, $block-underline-left-xs);
+}
+
+.footer {
+  &__block-label{
+    font-size: $block-label-font-size;
+    color: $footer-contact-label;
+    font-family: $font-family-helvetica;
+    font-weight: $font-weight-regular;
+    text-transform: lowercase;
+    margin-right: $block-label-margin-right;
+    line-height: $line-height-xl;
+    @include media-max(xl) {
+      font-size: $block-label-font-size-md;
+      margin-bottom: $block-label-margin-bottom;
+      line-height: $line-height-sm;
+    }
+    @include media-max(md) {
+      font-size: $block-label-font-size-xs;
+
+    }
+  }
+  &__value {
+    font-family: $font-family-helvetica;
+    font-weight: $font-weight-medium;
+    line-height: $line-height-lg;
+    color: $main-dark-color;
+    font-size: $block-value-font-size;
+    @include media-between(xl, xxl){
+      font-size: $block-value-font-size-xl;
+    }
+  }
+}

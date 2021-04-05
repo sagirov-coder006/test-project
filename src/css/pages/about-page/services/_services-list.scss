@@ -1,0 +1,30 @@
+$service-list-row-padding-top: 13px;
+
+.service-list {
+  &__row {
+    padding-top: $service-list-row-padding-top;
+  }
+
+  &__text {
+    font-weight: $font-weight-medium;
+    line-height: $line-height-sm;
+    @include media-max(xl) {
+      order: 2;
+    }
+  }
+
+  &__title {
+    @include block-upperline($container_padding-x/2, $container_padding-x_max-xl/2, $container_padding-x_max-md/2);
+    &:before {
+      top: -$service-list-row-padding-top;
+    }
+    @include media-max(xl) {
+      order: 1;
+    }
+  }
+  &__items {
+    @include media-max(xl) {
+      order: 3;
+    }
+  }
+}

@@ -1,0 +1,74 @@
+@mixin desktop-col-width($count, $margin) {
+  @for $i from 1 through $count {
+    $var: calc(((100% - #{$margin})/#{$count} - #{$margin})*#{$i});
+    .col-xl__#{$i} {
+      -ms-flex: 0 0 #{$var};
+      flex: 0 0 #{$var};
+      max-width: #{$var};
+      margin-right: $margin;
+      &:last-child {
+        margin-right: 0;
+      }
+    }
+  }
+}
+
+@mixin desktop-offset-col-width($count, $margin) {
+  @for $i from 1 through $count {
+    .offset-xl__#{$i} {
+      margin-left: calc(((100% - #{$margin})/#{$count} - #{$margin})*#{$i} + #{$margin});
+    }
+  }
+}
+
+@mixin get-coll($count, $margin, $part){
+  @for $i from 1 through $count {
+    $var: 100% * $i / $count;
+    .col-#{$part}__#{$i} {
+      -ms-flex: 0 0 #{$var};
+      flex: 0 0 #{$var};
+      max-width: #{$var};
+      padding-right: $margin;
+      padding-left: $margin;
+    }
+    .offset-#{$part}__#{$i} {
+      margin-left: 100% * $i / $count ;
+    }
+  }
+}
+
+@mixin get-coll-md($count, $margin){
+  @for $i from 1 through $count {
+    $var: 100% * $i / $count;
+    .col-md__#{$i} {
+      -ms-flex: 0 0 #{$var};
+      flex: 0 0 #{$var};
+      max-width: #{$var};
+      padding-right: $margin;
+      padding-left: $margin;
+    }
+    .offset-md__#{$i} {
+      margin-left: 100% * $i / $count ;
+    }
+  }
+}
+
+@mixin get-grid($count, $margin, $str) {
+  @for $i from 1 through $count {
+    $var: 100% * $i / $count;
+    .col-#{$str}__#{$i} {
+      -ms-flex: 0 0 #{$var};
+      flex: 0 0 #{$var};
+      max-width: #{$var};
+      padding-right: $margin;
+      padding-left: $margin;
+    }
+
+  }
+  $new-count: $count - 1;
+  @for $j from 0 through $new-count {
+    .offset-#{$str}__#{$j} {
+      margin-left: 100% * $j / $count ;
+    }
+  }
+}

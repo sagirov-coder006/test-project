@@ -1,0 +1,66 @@
+$footer-days-margin: rem(23px);
+$footer-little-time-text-margin-bottom: 21px;
+
+$footer-adress-order-md: 2;
+
+$footer-working-hours-order-md: 4;
+$footer-working-hours-order-xs: 3;
+
+$footer-little-time-text: rem(16px);
+$footer-little-time-text-xl: rem(14px);
+
+$footer-adress-margin-bottom-md: 75px;
+$footer-adress-margin-bottom-xs: 43px;
+
+$footer-worging-hours-margin-bottom-md: 58px;
+$footer-worging-hours-margin-bottom-xs: 65px;
+
+.footer {
+  $this: &;
+  &__adress {
+    #{$this}__value {
+    }
+  }
+  &__working-hours {
+    @include flex-row;
+    flex-wrap: wrap;
+  }
+  &__working-day {
+    @include flex-row;
+  }
+  &__days {
+    white-space: nowrap;
+    margin-right: $footer-days-margin;
+  }
+  &__time {
+    div {
+      font-size: $footer-little-time-text;
+      line-height: $line-height-sm;
+      font-weight: $font-weight-medium;
+      margin-bottom: $footer-little-time-text-margin-bottom;
+      @include media-between(xl, xxl) {
+        font-size: $footer-little-time-text-xl;
+      }
+    }
+  }
+  &__adress {
+    @include media-max(xl) {
+      order: $footer-adress-order-md;
+      margin-bottom: $footer-adress-margin-bottom-md;
+    }
+    @include media-max(sm) {
+      margin-bottom: $footer-adress-margin-bottom-xs;
+    }
+  }
+  &__working-hours {
+    @include media-max(xl) {
+      order: $footer-working-hours-order-md;
+      margin-bottom: $footer-worging-hours-margin-bottom-md;
+    }
+    @include media-max(sm) {
+      order: $footer-working-hours-order-xs;
+      margin-bottom: $footer-worging-hours-margin-bottom-xs;
+
+    }
+  }
+}

@@ -1,0 +1,11 @@
+@function make-breakpoint-infix(
+  $breakpoint-name,
+  $breakpoint-size,
+  $infix-prefix: "-"
+) {
+  @return if(
+    strip-unit($breakpoint-size) != 0,
+    "#{$infix-prefix}#{$breakpoint-name}",
+    ""
+  );
+}

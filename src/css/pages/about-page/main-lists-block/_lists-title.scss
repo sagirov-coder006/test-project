@@ -1,0 +1,57 @@
+$content-title-font-size: rem(29px);
+$content-title-font-size_max-xl: rem(24px);
+
+$content-title-margin-bottom: 29px;
+$content-title-margin-bottom_max-xl: 25px;
+
+$content-titles-block-margin-top: 60px;
+$content-titles-block-margin-bottom: 60px;
+
+$about-list-padding-bottom: 20px;
+$about-list-padding-bottom_max-md: 113px;
+
+.about-list {
+  $this-padding-bottom: $about-list-padding-bottom;
+  $this-padding-bottom-md: $about-list-padding-bottom_max-md;
+  padding-bottom: $this-padding-bottom;
+  @include block-underline($container_padding-x, $container_padding-x_max-xl, $container_padding-x_max-md);
+  @include media-max(md) {
+    padding-bottom: $about-list-padding-bottom_max-md;
+  }
+}
+
+.about-list-block{
+  $this-title-font-size: $content-title-font-size;
+  $this-title-font-size-xl: $content-title-font-size_max-xl;
+
+  $this-title-margin-bottom: $content-title-margin-bottom;
+  $this-title-margin-bottom-xl: $content-title-margin-bottom_max-xl;
+
+  $this-block-title-margin-top-md: $content-titles-block-margin-top;
+  $this-block-title-margin-bottom-md: $content-titles-block-margin-bottom;
+
+
+  &__content-titles {
+    font-size: $this-title-font-size;
+    font-weight: $font-weight-medium;
+    line-height: $line-height-sm;
+    & > div {
+      margin-bottom: $this-title-margin-bottom;
+      @include media-max(xl){
+        margin-bottom: $this-title-margin-bottom-xl;
+      }
+      @include media-max(md) {
+        br {
+          display: none;
+        }
+      }
+    }
+    @include media-max(xl){
+      font-size: $this-title-font-size-xl;
+    }
+    @include media-max(md) {
+      margin-bottom: $this-block-title-margin-top-md;
+      margin-top: $this-block-title-margin-bottom-md;
+    }
+  }
+}

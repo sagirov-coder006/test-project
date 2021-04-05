@@ -1,0 +1,58 @@
+.container {
+  width: 100%;
+  margin-left: auto;
+  margin-right: auto;
+  padding-right: $container_padding-x;
+  padding-left: $container_padding-x;
+  &_overflow-hidden {
+    overflow: hidden;
+  }
+  @include media-max(xl) {
+    padding-right: $container_padding-x_max-xl;
+    padding-left: $container_padding-x_max-xl;
+  }
+
+  @include media-max(md) {
+    padding-right: $container_padding-x_max-md;
+    padding-left: $container_padding-x_max-md;
+  }
+}
+
+.row {
+  display: -ms-flexbox;
+  display: flex;
+  -ms-flex-wrap: wrap;
+  flex-wrap: wrap;
+  margin-right: -$container_padding-x/2;
+  margin-left: -$container_padding-x/2;
+  @include media-max(xl) {
+    margin-right: -$column_margin-x_min_md/2;
+    margin-left: -$column_margin-x_min_md/2;
+  }
+
+  @include media-max(md) {
+    margin-right: -$column_margin-x_min_xs/2;
+    margin-left: -$column_margin-x_min_xs/2;
+  }
+}
+
+/*@include get-grid($column_count-x-_min_xl, $column_margin-x, $column_count-x-_min_md, $column_margin-x_min_md, $column_count-x-_min_xs, $column_margin-x_min_xs);*/
+
+
+@include get-grid($column_count-x-_min_xl, $column_margin-x/2, 'xl');
+@include media-max(xl) {
+  @include get-grid($column_count-x-_min_md, $column_margin-x_min_md/2, 'md');
+}
+
+@include media-max(md) {
+  @include get-grid($column_count-x-_min_xs, $column_margin-x_min_xs/2, 'xs');
+  @include get-grid($column_count-x-_min_md, $column_margin-x_min_md/2, 'sm');
+}
+
+@include media-max(sm) {
+  @include get-grid($column_count-x-_min_xs, $column_margin-x_min_xs/2, 'xs');
+}
+@include media-max(xxs) {
+  @include get-grid($column_count-x-_min_xs, $column_margin-x_min_xs/2, 'xxs');
+}
+

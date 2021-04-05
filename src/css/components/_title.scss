@@ -1,0 +1,34 @@
+$h1-font-size: rem(45px);
+$h1-font-size_max-xl: rem(45px);
+$h1-font-size_max-md: rem(40px);
+$h1-letter-spacing: -0.02em;
+
+$h2-font-size: rem(35px);
+$h2-font-size_max-xl: rem(35px);
+$h2-font-size_max-md: rem(25px);
+$h2-letter-spacing: -0.02em;
+
+$h3-font-size: rem(22px);
+$h3-font-size_max-xl: rem(22px);
+$h3-font-size_max-md: rem(22px);
+$h3-letter-spacing: -0.01em;
+
+h1, h2, h3 {
+  font-family: $font-family-dewi;
+  font-weight: $font-weight-black;
+  color: $main-dark-color;
+  text-transform: uppercase;
+}
+
+h1 {
+  @include get-H-title($h1-font-size, $h1-font-size_max-xl, $h1-font-size_max-md, $h1-letter-spacing);
+}
+
+h2 {
+  @include get-H-title($h2-font-size, $h2-font-size_max-xl, $h2-font-size_max-md, $h2-letter-spacing);
+}
+
+h3 {
+  @include get-H-title($h3-font-size, $h3-font-size_max-xl, $h3-font-size_max-md, $h3-letter-spacing);
+}
+

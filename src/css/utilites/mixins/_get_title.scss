@@ -1,0 +1,11 @@
+@mixin get-H-title($font-size, $font-size-xl, $font-size-md, $letter-spacing){
+  font-size: $font-size;
+  line-height: $line-height-none;
+  letter-spacing: $letter-spacing;
+  @include media-max(xl) {
+    font-size: $font-size-xl;
+  }
+  @include media-max(md) {
+    font-size: $font-size-md;
+  }
+}

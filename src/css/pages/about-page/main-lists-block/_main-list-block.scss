@@ -1,0 +1,36 @@
+$about-list-margin-top: 126px;
+$about-list-margin-top_max-xl: 129px;
+$about-list-margin-top_max-md: 66px;
+
+$undertitle-padding-bottom: 9px;
+$undertitle-margin-bottom: 26px;
+$undertitle-margin-bottom_max-md: 10px;
+
+.about-list-block {
+  $this-margin-top: $about-list-margin-top;
+  $this-margin-top-xl: $about-list-margin-top_max-xl;
+  $this-margin-top-md: $about-list-margin-top_max-md;
+
+  $this-undertitle-padding-bottom: $undertitle-padding-bottom;
+  $this-undertitle-margin-bottom: $undertitle-margin-bottom;
+  $this-undertitle-margin-bottom-md: $undertitle-margin-bottom_max-md;
+
+  margin-top: $this-margin-top;
+
+  &__title {
+    padding-bottom: $this-undertitle-padding-bottom;
+    margin-bottom: $this-undertitle-margin-bottom;
+    @include block-underline($container_padding-x/2, $container_padding-x_max-xl/2, $container_padding-x_max-md/2);
+    line-height: $line-height-sm;
+    @include media-max(md){
+      margin-bottom: $this-undertitle-margin-bottom-md;
+    }
+  }
+
+  @include media-max(xl) {
+    margin-top: $this-margin-top-xl;
+  }
+  @include media-max(md) {
+    margin-top: $this-margin-top-md;
+  }
+}

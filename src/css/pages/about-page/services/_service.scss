@@ -1,0 +1,37 @@
+$services-padding-top: 25px;
+$services-padding-top_max-md: 15px;
+
+$services-margin-top: 271px;
+$services-margin-top_max-xl: 200px;
+$services-margin-top_max-md: 150px;
+
+$services-h2-margin-bottom: 90px;
+$services-h2-margin-bottom_max-xl: 198px;
+$services-h2-margin-bottom_max-md: 101px;
+
+.services {
+  @include block-upperline($container_padding-x, $container_padding-x_max-xl, $container_padding-x_max-md);
+  padding-top: $services-padding-top;
+
+  margin-top: $services-margin-top;
+
+  @include media-max(xl) {
+    margin-top: $services-margin-top_max-xl;
+  }
+
+  @include media-max(md) {
+    padding-top: $services-padding-top_max-md;
+    margin-top: $services-margin-top_max-md;
+  }
+
+  h2 {
+    margin-bottom: $services-h2-margin-bottom;
+
+    @include media-max(xl) {
+      margin-bottom: $services-h2-margin-bottom_max-xl;
+    }
+    @include media-max(md) {
+      margin-bottom: $services-h2-margin-bottom_max-md;
+    }
+  }
+}

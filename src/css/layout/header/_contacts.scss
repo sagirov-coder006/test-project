@@ -1,0 +1,25 @@
+$phone-size: rem(21px);
+$phone-size-xl: rem(18px);
+$phone-size-md: rem(16px);
+$phone-size-xs: rem(14px);
+
+.header-contacts {
+  @include flex-vertical-center-right;
+
+  &__link {
+    font-family: $font-family-dewi;
+    color: $main-dark-color;
+    font-size: $phone-size;
+    line-height: $line-height-none;
+    @include media-max(xxl) {
+      font-size: $phone-size-xl;
+    }
+    @include media-max(xl) {
+      font-size: $phone-size-md;
+    }
+
+    @include media-max(md) {
+      font-size: $phone-size-xs;
+    }
+  }
+}

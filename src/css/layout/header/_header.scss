@@ -1,0 +1,27 @@
+$header-height: rem(75px);
+$header-height-md: rem(50px);
+
+$header-margin-bottom: 24px;
+$header-margin-bottom-md: 20px;
+$header-margin-bottom-xs: 15px;
+
+.header {
+  $this_height: $header-height;
+  $this_height_md: $header-height-md;
+  $this_margin_bottom: $header-margin-bottom;
+  $this_margin_bottom-md: $header-margin-bottom-md;
+  $this_margin_bottom-xs: $header-margin-bottom-xs;
+
+  display: flex;
+  align-items: center;
+  height: $this_height;
+  margin-bottom: $this_margin_bottom;
+  @include media-max(xl) {
+    height: $this_height_md;
+    margin-bottom: $this_margin_bottom-md;
+  }
+  @include media-max(md) {
+    margin-bottom: $this_margin_bottom-xs;
+  }
+  @include block-underline($container_padding-x, $container_padding-x_max-xl, $container_padding-x_max-md);
+}

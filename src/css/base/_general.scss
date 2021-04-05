@@ -1,0 +1,29 @@
+body {
+  background-color: $back-light-color;
+  @include setFont ($font-family-helvetica, 16px, $line-height-none, $font-weight-regular, $main-dark-color);
+}
+
+.underline-link {
+  @include transition(text-decoration, 0.2e, ease);
+  text-decoration: underline;
+  &__invert {
+    text-decoration: none;
+    &:hover {
+      text-decoration: underline;
+      @include transition(text-decoration, 0.2e, ease);
+    }
+  }
+  &:hover {
+    text-decoration: none;
+    @include transition(text-decoration, 0.2e, ease);
+  }
+}
+
+.clearfix {
+  clear: both;
+  float: none;
+}
+
+.no-wrap {
+  white-space: nowrap;
+}

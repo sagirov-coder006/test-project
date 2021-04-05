@@ -1,0 +1,95 @@
+$main-block-margin-top: 25px;
+$main-block-margin-top_max-md: 15px;
+$main-block-margin-bottom: 244px;
+$main-block-margin-bottom_max-xl: 176px;
+$main-block-margin-bottom_max-md: 150px;
+
+$guarantee-big-text: rem(29px);
+$guarantee-big-text_max-xl: rem(24px);
+
+$guarantee-small-text-margin-top: 9px;
+$guarantee-small-text-margin-top_max-xl: 7px;
+
+$guarantee-content-margin-top: 75px;
+
+$text-segment-width: 54%;
+$text-segment-margin-top_max-md: 23px;
+
+$button-block-margin-top: 25px;
+
+$button-margin-top_max-md: 50px;
+
+.no-padding {
+  padding-right: 0;
+  padding-left: 0;
+}
+
+.guarantee-block {
+  $this-margin-top: $main-block-margin-top;
+  $this-margin-bottom: $main-block-margin-bottom;
+  $this-margin-bottom-xl: $main-block-margin-bottom_max-xl;
+  $this-margin-bottom-md: $main-block-margin-bottom_max-md;
+
+  $this-small-text-margin-top: $guarantee-small-text-margin-top;
+  $this-small-text-margin-top-xl: $guarantee-small-text-margin-top_max-xl;
+
+  margin-top: $this-margin-top;
+  margin-bottom: $this-margin-bottom;
+  @include media-max(xl){
+    margin-bottom: $this-margin-bottom-xl;
+  }
+  @include media-max(md){
+    margin-top: $main-block-margin-top_max-md;
+    margin-bottom: $this-margin-bottom-md;
+  }
+  &__content {
+    line-height: $line-height-sm;
+    @include media-max(xl) {
+      margin-top: $guarantee-content-margin-top;
+    }
+  }
+  &__big-text {
+    $this-font-size: $guarantee-big-text;
+    $this-font-size-xl: $guarantee-big-text_max-xl;
+    font-weight: $font-weight-medium;
+    font-size: $this-font-size;
+    display: inline;
+    @include media-max(xl) {
+      font-size: $this-font-size-xl;
+    }
+  }
+  &__small-text {
+    width: $text-segment-width;
+    float: right;
+    margin-top: $this-small-text-margin-top;
+    @include media-max(xl) {
+      margin-top: $this-small-text-margin-top-xl;
+      width: 100%;
+    }
+    @include media-max(md) {
+      float: none;
+      margin-top: $text-segment-margin-top_max-md;
+    }
+  }
+  &__button-block {
+    margin-top: $button-block-margin-top;
+    @include flex-row;
+    align-items: flex-start;
+    justify-content: space-between;
+    clear: both;
+    width: 100%;
+    p {
+      width: $text-segment-width;
+      @include media-max(xl) {
+        width: 100%;
+      }
+      @include media-max(md) {
+        order: -1;
+        margin-bottom: $button-margin-top_max-md;
+      }
+    }
+    @include media-max(md) {
+      flex-wrap: wrap;
+    }
+  }
+}

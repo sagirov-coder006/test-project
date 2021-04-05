@@ -1,0 +1,96 @@
+$footer-bottom-part-padding-top: 78px;
+$footer-bottom-part-padding-bottom: 15px;
+$footer-bottom-part-padding-top-xs: 25px;
+$footer-bottom-part-padding-bottom-xs: 10px;
+
+$copyright-font-size: rem(16px);
+$copyright-font-size-lg: rem(15px);
+$copyright-font-size-xs: rem(14px);
+
+$sagirov-logo-width: 102px;
+$sagirov-logo-width-xs: 80px;
+
+$sagirov-logo-margin-bottom: 3px;
+$sagirov-madein-margin-right: 3px;
+
+.footer {
+  $this: &;
+  &__bottom-part {
+    align-items: flex-end;
+    padding-top: $footer-bottom-part-padding-top;
+    padding-bottom: $footer-bottom-part-padding-bottom;
+    @include media-max(md) {
+      padding-top: $footer-bottom-part-padding-top-xs;
+      padding-bottom: $footer-bottom-part-padding-bottom-xs;
+      flex-direction: column;
+      align-items: flex-start;
+    }
+  }
+  &__copyright {
+    font-size: $copyright-font-size;
+    line-height: $line-height-none;
+    color: $footer-contact-label;
+    @include media-between(md, lg){
+      font-size: $copyright-font-size-lg;
+    }
+    @include media-max(xs) {
+      font-size: $copyright-font-size-xs;
+    }
+  }
+
+  #{$this}__confidential-link {
+    text-transform: lowercase;
+    color: $main-dark-color;
+    font-size: $copyright-font-size;
+    @include media-between(md, lg){
+      font-size: $copyright-font-size-lg;
+    }
+    @include media-max(xs) {
+      font-size: $copyright-font-size-xs;
+    }
+  }
+  #{$this}__confidential {
+    @include media-max(md) {
+      white-space: nowrap;
+    }
+  }
+  &__sagirov {
+    display: flex;
+    justify-content: flex-end;
+    a{
+      @include flex-vertical-bottom;
+      flex-wrap: wrap;
+      font-size: $copyright-font-size;
+      color: $footer-contact-label;
+      line-height: $line-height-none;
+      @include media-max(lg) {
+        flex-direction: column;
+      }
+      @include media-between(md, lg){
+        font-size: $copyright-font-size-lg;
+      }
+      @include media-max(xs) {
+        font-size: $copyright-font-size-xs;
+      }
+      .made-in {
+        white-space: nowrap;
+        margin-right: $sagirov-madein-margin-right;
+        @include media-max(lg) {
+          align-self: flex-start;
+        }
+      }
+
+    }
+    img {
+      width: $sagirov-logo-width;
+      margin-bottom: $sagirov-logo-margin-bottom;
+      @include media-max(xs) {
+        width: $sagirov-logo-width-xs;
+      }
+    }
+    @include media-max(md) {
+      position: absolute;
+      right: $column_margin-x_min_xs;
+    }
+  }
+}

@@ -1,0 +1,49 @@
+$hamburger-width: rem(71px);
+$hamburger-width-md: rem(56px);
+$hamburger-width-xxs: rem(40px);
+$hamburger-line-height: 3px;
+$hamburger-line-top: 10px;
+$hamburger-margin: rem(49px);
+$hamburger-margin-md: rem(25px);
+$hamburger-margin-xs: rem(19px);
+
+.hamburger {
+  width: $hamburger-width;
+  @include flex-vertical-center;
+  margin-left: $hamburger-margin;
+  @include media-max(xxl){
+    margin-left: $hamburger-margin-md;
+  }
+  @include media-max(xl) {
+    width: $hamburger-width-md;
+  }
+  @include media-max(md) {
+    margin-left: $hamburger-margin-xs;
+  }
+  @include media-max(xxs) {
+    widows: $hamburger-width-xxs;
+  }
+  span{
+    display: block;
+    width: 100%;
+    height: $hamburger-line-height;
+    position: relative;
+    background-color: $main-dark-color;
+    &:before,
+    &:after{
+      content: '';
+      display: block;
+      width: 100%;
+      height: $hamburger-line-height;
+      background-color: $main-dark-color;
+      position: absolute;
+    }
+    &:before {
+      top: -$hamburger-line-top;
+    }
+    &:after {
+      top: $hamburger-line-top;
+    }
+  }
+
+}

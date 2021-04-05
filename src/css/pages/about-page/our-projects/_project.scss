@@ -1,0 +1,131 @@
+$project-name-margin-bottom: 80px;
+$project-name-margin-bottom_max_md: 50px;
+
+$square-font-size: rem(18px);
+$rooms-font-size: rem(16px);
+
+$project-info-margin-bottom: 13px;
+
+$large-project-padding-bottom: 20px;
+
+$mobile-project-width: 60%;
+
+.project {
+  $this: &;
+  padding-bottom: $large-project-padding-bottom;
+  &__name {
+    margin-bottom: $project-name-margin-bottom;
+    .mobile-title {
+      display: none;
+    }
+    @include media-max(md) {
+      margin-bottom: $project-name-margin-bottom_max_md;
+      margin-top: 65px;
+      @include flex-row;
+      .mobile-title {
+        display: block;
+        width: calc(100% - #{$mobile-project-width});
+      }
+    }
+  }
+  &.large {
+    position: relative;
+    &:after {
+      content: '';
+      display: block;
+      width: 1px;
+      height: 100%;
+      background-color: $footer-contact-label;
+      position: absolute;
+      right: 0;
+      top: 0;
+    }
+    @include media-max(xl) {
+      order: 10;
+      &:after {
+        right: 100%;
+      }
+    }
+    @include media-max(md) {
+      order: -1;
+      &:after {
+        width: calc(100% - #{$container_padding-x_max-md});
+        left: $container_padding-x_max-md/2;
+        height: 1px;
+        bottom: 0;
+        top: auto;
+      }
+    }
+  }
+  &__info {
+    @include flex-row;
+    justify-content: space-between;
+    align-items: flex-end;
+    line-height: $line-height-sm;
+    margin-bottom: $project-info-margin-bottom;
+  }
+  &__square {
+    font-size: $square-font-size;
+    font-weight: $font-weight-medium;
+  }
+  &__rooms,
+  &__year {
+    font-size: $rooms-font-size;
+  }
+
+  &.small {
+    #{$this}__name {
+      @include media-max(md) {
+        margin-bottom: $project-name-margin-bottom_max_md;
+        @include flex-row;
+        .mobile-title {
+          display: block;
+          width: calc(100% - #{$mobile-project-width});
+        }
+      }
+    }
+    #{$this}__info {
+      @include media-max(md) {
+        margin-left: calc(100% - #{$mobile-project-width});
+        width: $mobile-project-width;
+      }
+    }
+    #{$this}__image {
+      @include media-max(md) {
+        margin-left: calc(100% - #{$mobile-project-width});
+        width: $mobile-project-width;
+      }
+    }
+    @include media-max(md){
+      position: relative;
+      &:after {
+        content: '';
+        display: block;
+        width: calc(#{$mobile-project-width} - #{$container_padding-x_max-md}/2);
+        height: 1px;
+        background-color: $footer-contact-label;
+        right: $container_padding-x_max-md/2;
+        bottom: 0;
+        position: absolute;
+      }
+    }
+  }
+}
+.reverse {
+  .project {
+    &.large {
+      &:after {
+        right: 100%;
+      }
+      @include media-max(xl) {
+        order: -1;
+        &:after {
+          right: 0;
+        }
+      }
+      @include media-max(md) {
+        //order: 10;
+      }
+    }
+  }
+}

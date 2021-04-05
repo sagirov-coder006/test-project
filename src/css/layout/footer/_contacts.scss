@@ -1,0 +1,19 @@
+$footer-contacts-primary-margin-md: 75px;
+$footer-contacts-primary-margin-xs: 65px;
+
+.footer {
+  &__contacts-value {
+    @include flex-column;
+  }
+  &__contacts-primary {
+    @include media-max(xl) {
+      order: 1;
+      margin-bottom: $footer-contacts-primary-margin-md;
+    }
+    @include media-max(sm) {
+      margin-bottom: $footer-contacts-primary-margin-md;
+    }
+  }
+
+
+}

@@ -1,0 +1,325 @@
+/// Проверяет валидное ли значение для промежутков между колонками
+///
+/// @param $gutter {Number} - Промежуток между колонок
+///
+/// @return {Bool} - Если true, тогда значение можно использовать
+@function is-gutter($gutter) {
+  @return (type-of($gutter) == "number" and $gutter != 0);
+}
+
+/// Добавляет отступы слева и справа
+///
+/// @param {Number} $gutter [null] - Промежуток между колонками.
+@mixin gutter($gutter: null) {
+  @if (is-gutter($gutter)) {
+    padding-left: $gutter / 2;
+    padding-right: $gutter / 2;
+  }
+}
+
+/// Дефолтные стили для контейнера
+///
+/// @param {Number} $gutter [null] - Промежуток между колонками.
+/// Необходим для создания отступов, чтобы контент не располагался вплотную к стенкам контейнера
+@mixin container($gutter: null) {
+  width: 100%;
+  margin-right: auto;
+  margin-left: auto;
+
+  @include gutter($gutter);
+}
+
+/// Создает отрицательные марджины слева и справа для строки с колонками на основе промежутков колонок.
+/// Нужен для того, чтобы отступы крайних колонок не складывались с отступами контейнера
+///
+/// @param {Number} $gutter [null] - Промежуток между колонками
+@mixin row-gutter($gutter: null) {
+  @if (is-gutter($gutter)) {
+    margin-right: -$gutter / 2;
+    margin-left: -$gutter / 2;
+  }
+}
+
+/// Дефолтные стили для строки, которая будет содержать колонки
+///
+/// @param {Number} $gutter [null] - Промежуток между колонками.
+/// Необходим для создания отрицательного margin
+@mixin row($gutter: null) {
+  display: flex;
+  flex-wrap: wrap;
+
+  @include row-gutter($gutter);
+}
+
+/// Дефолтные стили для колонки
+///
+/// @param {Number} $size - Размер колонки представляющий собой число от 1 до $columns
+/// @param {Number} $columns - Кол-во колонок
+/// @param {Number} $gutter [null] - Промежуток между колонками.
+@mixin col($size, $columns, $gutter: null) {
+  flex: 0 0 percentage($size / $columns);
+  max-width: percentage($size / $columns);
+
+  @include gutter($gutter);
+}
+
+/// Создает отступ слева равный размеру колонки $size
+///
+/// @param {Number} $size - Размер колонки представляющий собой число от 1 до $columns
+/// @param {Number} $columns - Кол-во колонок
+@mixin offset($size, $columns) {
+  margin-left: percentage($size / $columns);
+}
+
+/// Создает медиа запрос равный размеру $size. Если размер равно 0, тогда просто выводит содержимое
+///
+/// @param {Number} $size - Ширина экрана
+/// @param {"min"|"max"} $min-or-max - Минимальная или максимальная ширина
+@mixin media-breakpoint($size, $min-or-max: "min") {
+  @if (strip-unit($size) != 0) {
+    @media (#{$min-or-max}-width: $size) {
+      @content;
+    }
+  } @else {
+    @content;
+  }
+}
+
+/// Дефолтая конфигурация сетки
+$default-config: (
+        columns: 12,
+        gutter: 30px,
+        breakpoints: (
+                xs: 0,
+                sm: 576px,
+                md: 768px,
+                lg: 992px,
+                xl: 1200px,
+                xxl: 1400px,
+        ),
+        order: true,
+        offset: true,
+);
+
+/// Создает сетку по конфигурации $config
+///
+/// @param {Map} config [$default-config] - Конфигурация сетки
+/// @param {Bool|Map|Null} config.gutter - Отступы между колонок
+/// @param {Number} config.columns - Кол-во колонок
+/// @param {Map} config.breakpoints - Точки смены раскладки
+/// @param {Bool} config.order - Если true, тогда создает классы, которые контролируют порядок колонок
+/// @param {Bool} config.offset - Если true, тогда создает классы,
+/// которые позволяют создать отступ слева от колонки равный определенному размер колонки
+///
+/// @example
+/// @include grid(
+///   (
+///     columns: 12,
+///     gutter: 30px - Будут созданы промежутки для контейнер и для колонок. Можно опустить, тогда отступы не будут созданы
+///     breakpoints: (
+///       xs: 0,
+///       sm: 576px,
+///       ...
+///     ),
+///     order: true,
+///     offset: true,
+///   )
+/// );
+///
+/// @example - Указание промежутков для колонок и контейнера
+/// @include grid(
+///   (
+///     ...
+///     gutter: (
+///       column: 30px - Можно опустить, тогда отступы для контейнера не будут созданы
+///       container: 30px - Можно опустить, тогда отступы для контейнера не будут созданы
+///     )
+///     ...
+///   )
+/// );
+///
+/// @example - Указание промежутков для колонок и контейнера, которые будут меняться на определенных брейкпойнтах
+/// @include grid(
+///   (
+///     ...
+///     gutter: (
+///       column: (
+///         xs: 30px,
+///         sm: 40px
+///       )
+///       container: (
+///         xs: 30px,
+///         sm: 40px
+///       )
+///     )
+///     ...
+///   )
+/// );
+@mixin grid($config: $default-config) {
+  $gutter: map-get($config, "gutter");
+  $columns: map-get($config, "columns");
+  $breakpoints: map-get($config, "breakpoints");
+  $order: map-get($config, "order");
+  $offset: map-get($config, "offset");
+  /// Промежуток между колонками
+  /// @type Map | Number | null
+  $column-gutter: if(type-of($gutter) == "map", map-get($gutter, "column"), $gutter);
+  /// Отступы для контейнера
+  /// @type Map | Number | null
+  $container-gutter: if(type-of($gutter) == "map", map-get($gutter, "container"), $gutter);
+
+  /// Общие стили для всех колонок
+  %col-base {
+    position: relative;
+    width: 100%;
+
+    @include gutter($column-gutter);
+  }
+
+  /// Создает класс для контейнера если $container-gutter число
+  .container {
+    @include container($container-gutter);
+  }
+
+  /// Создаем класс для строки, которая будет хранить колонки.
+  /// Если заданы отступы для контейнера,тогда добавляем отрицательные марджины
+  .row {
+    @include row(if(is-gutter($container-gutter), $column-gutter, null));
+  }
+
+  @each $breakpoint-name, $breakpoint-size in $breakpoints {
+    // Часть названия класса, которая представляет собой имя брейкпойнта (xs, sm и т.д.)
+    // Если брейкпонт не равен 0, тога переменная будет равна "-#{имя брейкпойнта}",
+    // в противном случае будет пустая строка
+    $breakpoint-class-infix: if($breakpoint-size != 0, "-#{$breakpoint-name}", "");
+
+    @if ($columns > 0) {
+      // Создаем классы колонок с дефолтными стилями
+      @for $i from 1 through $columns {
+        .col#{$breakpoint-class-infix}-#{$i} {
+          @extend %col-base;
+        }
+      }
+
+      .col#{$breakpoint-class-infix},
+      .col#{$breakpoint-class-infix}-auto {
+        @extend %col-base;
+      }
+
+      @include media-breakpoint($breakpoint-size, min) {
+        // Создаем классы контейнера для определенного брекпойнта
+        @if (type-of($container-gutter) == "map") {
+          $specific-container-gutter: map-get($container-gutter, $breakpoint-name);
+
+          // Создаем классы если для текущего брейкпойнта заданы отступы
+          @if (is-gutter($specific-container-gutter)) {
+            .container {
+              @include gutter($specific-container-gutter);
+            }
+          }
+        }
+
+        // Создаем строку для определенного брейкпойнта,
+        // если указаны отступы для контейнера и промежуток между колонками это карта
+        @if (
+                (is-gutter($container-gutter) or type-of($container-gutter) == "map") and
+            type-of($column-gutter) ==
+            "map"
+        ) {
+          $specific-row-gutter: map-get($column-gutter, $breakpoint-name);
+
+          .row {
+            @include row-gutter($specific-row-gutter);
+          }
+        }
+
+        // Создаем класс для колонки без указанного размера (col, col-xs, col-sm ...)
+        .col#{$breakpoint-class-infix} {
+          flex-basis: 0;
+          flex-grow: 1;
+          max-width: 100%;
+        }
+
+        // Создаем класс для колонки c размером равным ее контенту
+        .col#{$breakpoint-class-infix}-auto {
+          flex: 0 0 auto;
+          width: auto;
+          max-width: 100%;
+        }
+
+        // Создаем классы, которые будут переопределять
+        // промежутки между колонками для определенного брейкпойнта
+        @if (type-of($column-gutter) == "map") {
+          // список с классами
+          $col-classes: ".col#{$breakpoint-class-infix}", ".col-auto";
+
+          // заполняем список нужными классами
+          @for $i from 1 through $columns {
+            $col-classes: append($col-classes, ".col#{$breakpoint-class-infix}-#{$i}");
+          }
+
+          $specific-col-gutter: map-get($column-gutter, $breakpoint-name);
+
+          #{$col-classes} {
+            @include gutter($specific-col-gutter);
+          }
+        }
+
+        // Создаем основные колонки (col-1, col-2..., col-sm-1, col-sm-2...)
+        @for $i from 1 through $columns {
+          .col#{$breakpoint-class-infix}-#{$i} {
+            @include col($i, $columns);
+          }
+        }
+
+        // Создаем классы определяющие порядок колонок
+        @if ($order) {
+          @for $i from 1 through $columns {
+            .order#{$breakpoint-class-infix}-#{$i} {
+              order: $i;
+            }
+          }
+
+          .order#{$breakpoint-class-infix}-first {
+            order: -1;
+          }
+
+          .order#{$breakpoint-class-infix}-last {
+            order: $columns + 1;
+          }
+        }
+
+        // display none
+        .d#{$breakpoint-class-infix}-none {
+          display: none;
+        }
+
+        // display initial
+        .d#{$breakpoint-class-infix}-initial {
+          display: initial;
+        }
+
+        // display flex
+        .d#{$breakpoint-class-infix}-flex {
+          display: flex;
+        }
+
+        // offsets
+        .offset#{$breakpoint-class-infix}-auto {
+          margin-left: auto;
+        }
+
+        @if ($offset) {
+          @for $i from 0 through $columns {
+            // Не создаем класс с отступом равным размеру всех колонок
+            @if ($i != $columns) {
+              .offset#{$breakpoint-class-infix}-#{$i} {
+                @include offset($i, $columns);
+              }
+            }
+          }
+        }
+      }
+    }
+  }
+}
